@@ -76,7 +76,7 @@ Tools.connect = function() {
     self.socket = null;
   }
 
- //this.socket = io.connect(':8080', {
+ //this.socket = io.connect(':8080', {   //original
   this.socket = io.connect('process.env.PORT || :8080', {	// const PORT = process.env.PORT || 3000;   sacamos  process.env.PORT || 3000  
   //this.socket = io.connect('https://w133.herokuapp.com', {    //este poner si el otro es lento ,  otra opcion seria https://w133.herokuapp.com/board.html?board=ttt
   //this.socket = io.connect(':8080', {	    //este parece lento
